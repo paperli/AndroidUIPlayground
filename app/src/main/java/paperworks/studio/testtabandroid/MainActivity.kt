@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
                 openFragment(canvasFragment)
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_list -> {
+                val listCanvasFragment = ListCanvasFragment.newInstance("Canvas", "Cool third")
+                openFragment(listCanvasFragment)
+                return@OnNavigationItemSelectedListener true
+            }
         }
         true
     }
